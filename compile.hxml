@@ -1,0 +1,7 @@
+-cp src
+-lib heaps
+-lib random
+-lib color
+-js main.js
+-main Main
+

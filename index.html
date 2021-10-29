@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Webgl editor</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div>
+      <div class="flexRow">
+        <div class="flexRow counterBody">
+          Number of current shapes: <p id="shapeCount">0</p>
+        </div>
+        <div class="flexRow counterBody">
+          Surface area occupied by shapes: <p id="shapeArea">0px / 0px</p>
+        </div>
+      </div>
+      <canvas id="webgl"></canvas>
+      
+      <div class="flexRow">
+        <div class="flexCol">
+            <div class="flexRow flexAllCenter">
+                <p>Number of Shapes: <p style="margin-left: 5px;" id="shapesPerSec">1</p> /s</p>
+            </div>
+            <div class="flexRow flexAllCenter">
+                <button id="decreaseShapesPerSec">-</button>
+                <button id="increaseShapesPerSec">+</button>
+            </div>
+        </div>
+        <div class="flexCol">
+            <div class="flexRow flexAllCenter">
+                <p>Gravity value: <p style="margin-left: 5px;" id="gravityValue">3.1</p></p>
+            </div>
+            <div class="flexRow flexAllCenter">
+                <button id="decreaseGravity">-</button>
+                <button id="increaseGravity">+</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
